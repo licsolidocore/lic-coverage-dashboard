@@ -26,7 +26,6 @@
     min-height: 100vh;
     padding-bottom: 60px;
   }
-
   .header {
     background: var(--ink);
     color: white;
@@ -67,7 +66,6 @@
     color: rgba(255,255,255,0.7);
   }
   .meta-chip strong { color: white; }
-
   .steps {
     background: #FFF8F2;
     border-left: 3px solid var(--accent);
@@ -81,7 +79,6 @@
   .steps strong { color: var(--ink); }
   .steps ol { padding-left: 18px; margin-top: 6px; }
   .steps li { margin-bottom: 4px; }
-
   .main { padding: 28px 40px 0; }
   .section-label {
     font-size: 10px;
@@ -93,7 +90,6 @@
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
   }
-
   .person-selector {
     display: flex;
     flex-wrap: wrap;
@@ -121,11 +117,9 @@
     margin-left: 5px;
     font-weight: 700;
   }
-
   .task-form { display: block; animation: fadeIn 0.2s ease; }
   .task-form.visible { display: block; }
   @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-
   .form-header {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -148,7 +142,6 @@
   }
   .form-name { font-weight: 600; font-size: 16px; }
   .form-instruction { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
-
   .task-groups {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -156,7 +149,6 @@
     overflow: hidden;
     margin-bottom: 20px;
   }
-
   .task-group-header {
     background: var(--tag-bg);
     padding: 10px 20px;
@@ -168,7 +160,6 @@
     border-bottom: 1px solid var(--border);
     border-top: 1px solid var(--border);
   }
-
   .task-row {
     display: flex;
     align-items: center;
@@ -186,7 +177,6 @@
   .task-row.claimed .task-checkbox { background: #ccc; border-color: #ccc; }
   .task-row.claimed .task-checkbox::after { content: '✓'; color: white; font-size: 12px; font-weight: 700; }
   .claimed-by { font-size: 10px; color: #999; margin-top: 2px; font-style: italic; }
-
   .task-checkbox {
     width: 20px; height: 20px;
     border-radius: 5px;
@@ -198,12 +188,10 @@
   }
   .task-row.selected .task-checkbox { background: var(--green); border-color: var(--green); }
   .task-row.selected .task-checkbox::after { content: '✓'; color: white; font-size: 12px; font-weight: 700; }
-
   .task-info { flex: 1; }
   .task-name { font-size: 13px; font-weight: 500; color: var(--ink); }
   .task-row.selected .task-name { color: var(--green); }
   .task-detail { font-size: 11px; color: var(--ink-soft); margin-top: 2px; }
-
   .due-badge {
     padding: 3px 9px;
     border-radius: 10px;
@@ -216,7 +204,6 @@
   }
   .due-badge.urgent { background: #FDECEA; color: var(--accent); }
   .due-badge.soon { background: #FFF8E7; color: #9A7000; }
-
   .form-footer {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -248,7 +235,6 @@
     margin-bottom: 16px;
   }
   .notes-textarea:focus { border-color: var(--accent); }
-
   .submit-btn {
     display: inline-flex;
     align-items: center;
@@ -265,7 +251,6 @@
     transition: background 0.15s, transform 0.1s;
   }
   .submit-btn:hover { background: var(--accent); transform: translateY(-1px); }
-
   /* SUMMARY */
   .summary-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
   .summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
@@ -303,7 +288,6 @@
   .summary-task-item::before { content: '✓'; color: var(--green); font-weight: 700; font-size: 11px; flex-shrink: 0; }
   .summary-notes { padding: 8px 16px 12px; font-size: 12px; color: var(--ink-soft); font-style: italic; border-top: 1px solid var(--border); }
   .empty-summary { padding: 14px 16px; font-size: 12px; color: var(--ink-soft); text-align: center; }
-
   .no-responses {
     background: var(--surface);
     border: 1px dashed var(--border);
@@ -313,7 +297,6 @@
     color: var(--ink-soft);
     font-size: 14px;
   }
-
   .date-range-row {
     display: flex;
     align-items: center;
@@ -366,7 +349,6 @@
   .facility-status { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; }
   .facility-status.low { color: var(--gold); }
   .facility-note { font-size: 12px; color: var(--ink-soft); margin-top: 6px; line-height: 1.4; }
-
   .thanks-note {
     background: var(--ink);
     color: white;
@@ -380,7 +362,6 @@
   .thanks-icon { font-size: 28px; flex-shrink: 0; }
   .thanks-text { font-size: 14px; line-height: 1.6; color: rgba(255,255,255,0.8); }
   .thanks-text strong { color: white; }
-
   @media (max-width: 600px) {
     .header, .main { padding-left: 20px; padding-right: 20px; }
     .steps { margin: 16px 20px 0; }
@@ -389,20 +370,19 @@
 </style>
 </head>
 <body>
-
 <div class="header">
   <div class="header-eyebrow">Solidcore LIC · Coverage Dashboard</div>
   <h1>Juan's Out of Office<br>Coverage Plan</h1>
   <div class="header-sub">Select your name and check off what you can support.</div>
   <div class="header-meta">
-    <span class="meta-chip">Away: <strong>3/11 – 3/24</strong></span>
+    <span class="meta-chip">Away: <strong>9/10 – 9/23</strong></span>
     <span class="meta-chip">Studio: <strong>LIC</strong></span>
     <a href="https://drive.google.com/drive/folders/1B0ifQPDJMOpUHkDLgKbLGzgC0tyaL-pv?usp=drive_link" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;">📋 LIC — Visitors Guide</a>
-    <a href="https://licsolidocore.github.io/lic-shift-report-/" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;">📝 Shift Wrap-Up Report</a>
+    <a href="https://licsolidocore.github.io/solidcore-bkct-shifts/" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;">📝 Shift Wrap-Up Submission Form</a>
     <a href="https://docs.google.com/spreadsheets/d/1UH8LiMF0RvrJTTWayHnyLNMsHvLpTJ_NKXgOlgQWDVo/edit?gid=240386413#gid=240386413" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;">📊 Shift Wrap-Up Spreadsheet</a>
+    <a href="https://docs.google.com/spreadsheets/d/1o2wo_ytt4yY0ANk4rksODIftAkW9Im2mPZs5URyYWGY/edit?usp=sharing" target="_blank" style="display:inline-flex;align-items:center;gap:5px;padding:5px 14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:20px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.7);text-decoration:none;">📧 Coach Contact Info</a>
   </div>
 </div>
-
 <div class="steps">
   <strong>How it works:</strong>
   <ol>
@@ -411,36 +391,28 @@
     <li>Add any notes, then hit <strong>Submit My Coverage</strong></li>
   </ol>
 </div>
-
 <div class="main">
-
   <div style="background:#FFF8E7;border-left:3px solid var(--gold);margin-bottom:24px;border-radius:8px;padding:14px 18px;font-size:13px;color:var(--ink);line-height:1.6;">
     <span style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:4px;">📌 Facilities Note</span>
-    Leo (machine maintenance) will be bolting down machines at LIC on <strong>3/10</strong>. Coaches and Core Crew have been notified.
+    [Add any facilities notes for this period here — e.g. maintenance visits or machine work.]
     <div style="margin-top:10px;padding-top:10px;border-top:1px solid #F0E0B0;">
       If trash or recycling does not get picked up, you can email the contacts below to set up a special pick-up:<br>
-      <span style="display:block;margin-top:6px;"><strong>Trash:</strong> Monday, Wednesday & Friday &nbsp;·&nbsp; <strong>Recycling:</strong> Tuesday — this has been delegated to coaches.</span>
+      <span style="display:block;margin-top:6px;"><strong>Trash:</strong> Monday, Wednesday & Friday</span>
+      <span style="display:block;margin-top:4px;"><strong>Recycling:</strong> Tuesday — this has been delegated to the cleaning team, they tie up the boxes and bring it outside.</span>
       <span style="display:block;margin-top:8px;">
-      <a href="/cdn-cgi/l/email-protection#3f5e514b575051461149564b5e535a7f485e4c4b5a5c5051515a5c4b5650514c115c5052" style="color:var(--accent);font-weight:600;text-decoration:none;"><span class="__cf_email__" data-cfemail="03626d776b6c6d7a2d756a77626f66437462707766606c6d6d6660776a6c6d702d606c6e">[email&#160;protected]</span></a> &nbsp;·&nbsp;
-      <a href="/cdn-cgi/l/email-protection#1b7562687e696d72787e5b6c7a686f7e787475757e786f7274756835787476" style="color:var(--accent);font-weight:600;text-decoration:none;"><span class="__cf_email__" data-cfemail="cea0b7bdabbcb8a7adab8eb9afbdbaabada1a0a0abadbaa7a1a0bde0ada1a3">[email&#160;protected]</span></a>
+      <a href="mailto:anthony.vitale@wasteconnections.com" style="color:var(--accent);font-weight:600;text-decoration:none;">anthony.vitale@wasteconnections.com</a> &nbsp;·&nbsp;
+      <a href="mailto:nyservice@wasteconnections.com" style="color:var(--accent);font-weight:600;text-decoration:none;">nyservice@wasteconnections.com</a>
       </span>
     </div>
   </div>
-
   <div class="section-label">Who are you?</div>
   <div class="person-selector" id="personSelector">
     <button class="person-btn" onclick="selectPerson(this, 'Kate')">Kate</button>
     <button class="person-btn" onclick="selectPerson(this, 'Inger')">Inger</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Rosie')">Rosie</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Anastasiia')">Anastasiia</button>
+    <button class="person-btn" onclick="selectPerson(this, 'Alicia')">Alicia</button>
     <button class="person-btn" onclick="selectPerson(this, 'Isabel')">Isabel</button>
     <button class="person-btn" onclick="selectPerson(this, 'Kaitlyn')">Kaitlyn</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Nicole')">Nicole</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Giana')">Giana</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Sam')">Sam</button>
-    <button class="person-btn" onclick="selectPerson(this, 'Patricia')">Patricia</button>
-  </div>
-
+    <button class="person-btn" onclick="selectPerson(this, 'Patricia')">Patricia</button>  </div>
   <div class="task-form" id="taskForm">
     <div class="form-header">
       <div class="form-avatar" id="formAvatar">👆</div>
@@ -449,169 +421,8 @@
         <div class="form-instruction">Check everything you're able to cover while Juan is away.</div>
       </div>
     </div>
-
     <div class="task-groups">
-
-
-
       <div class="task-group-header">📋 Operations Support</div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Netgym sub support — Coaches</div>
-          <div class="task-detail">Monitor and assist with coach sub requests via Netgym</div>
-        </div>
-        <span class="due-badge">Ongoing</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Netgym sub support — Core Crew</div>
-          <div class="task-detail">Monitor and assist with Core Crew sub requests via Netgym. Support finding subs for Core Crew shifts — link to approved TOR for Core Crew below for reference.</div>
-          <a href="https://docs.google.com/document/d/1mAkak8lPivbSCbAFXA3u2Uz_r1g1LChM7GVZbrJo6bg/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📄 Approved TOR — Core Crew</a>
-        </div>
-        <span class="due-badge">Ongoing</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Client experience items — shift wrap-ups</div>
-          <div class="task-detail">Review shift wrap-up notes and address client experience flags. Anything flagged as client experience or facilities — Inger and Anastasiia will automatically get an email, and it will be highlighted in red in the spreadsheet.</div>
-          <a href="https://docs.google.com/spreadsheets/d/1UH8LiMF0RvrJTTWayHnyLNMsHvLpTJ_NKXgOlgQWDVo/edit?gid=240386413#gid=240386413" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📋 Shift Wrap-Up Report</a>
-        </div>
-        <span class="due-badge">Ongoing</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Management inbox (Management tab)</div>
-          <div class="task-detail">Monitor and respond to anything labeled under the Management tab in the studio inbox</div>
-        </div>
-        <span class="due-badge">Ongoing</span>
-      </div>
-
-
-
-
-
-
-
-
-
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Timesheets (3/1–3/15)</div>
-          <div class="task-detail">Due by 11AM on 3/16 — please make sure to clear any individual clock ins as well</div>
-        </div>
-        <span class="due-badge urgent">Due 3/15</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Reconcile Unpaids (3/1–3/15)</div>
-          <div class="task-detail">I will delegate to Core Crew but need support keeping an eye on it closer to payroll date.</div>
-        </div>
-        <span class="due-badge urgent">Due 3/15</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Negative Account Balances</div>
-          <div class="task-detail">Keep an eye on NAB — I will delegate to Core Crew but will need support on this closer to deadlines<br><a href="https://docs.google.com/spreadsheets/d/17JaWGpZqJGzV3QVN0RXd9M5avRAMUPWMQyAgKhdVvcM/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📊 NAB Spreadsheet</a></div>
-        </div>
-        <span class="due-badge urgent">Due 3/15</span>
-      </div>
-
-
-
-
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Send Coach Pay Breakdowns</div>
-        </div>
-        <span class="due-badge soon">Due 3/20</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Timesheets (3/16–3/22)</div>
-          <div class="task-detail">Due by 11AM on 3/22</div>
-        </div>
-        <span class="due-badge soon">Due 3/22</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Reconcile Unpaids (3/16–3/22)</div>
-          <div class="task-detail">I will delegate to Core Crew but need support keeping an eye on it closer to payroll date.</div>
-        </div>
-        <span class="due-badge soon">Due 3/22</span>
-      </div>
-
-
-
-
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Send Theme Class Request Form</div>
-          <div class="task-detail">I will send the form and schedule a reminder — attaching the form here for reference. Deadline for coaches to submit is 3/21.</div>
-          <a href="https://forms.gle/gSkC1bWCMocdEPqw8" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📝 Theme Request Form</a>
-        </div>
-        <span class="due-badge urgent">Due 3/10</span>
-      </div>
-
-
-
-
-
-
-
-
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Solidays Prize Pick-Up</div>
-          <div class="task-detail">Working on finalizing the schedule, but all prizes are organized and Core Crew + coaches have the information needed to give away prizes. More so overseeing if any urgent matters come through the inbox.<br><a href="https://docs.google.com/spreadsheets/d/15kdJ7PLSFPr9xKu2W1BfW37FU94SWhtC/edit?gid=268885195#gid=268885195" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">🏆 Solidays List</a> <a href="https://licsolidocore.github.io/solidays-coverage/" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">🎁 Solidays Pickup Support</a></div>
-        </div>
-        <span class="due-badge soon">3/19–3/22</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Add Theme Classes to MBO</div>
-          <div class="task-detail">Once coach submissions are in, add approved theme classes to MBO by 3/22.<br><a href="https://docs.google.com/spreadsheets/d/1IJVRAVa4VC91xHdGXMyHCrgR-1iXYN4yHc3FDELutDc/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">🎨 Theme Class Submissions</a></div>
-        </div>
-        <span class="due-badge soon">3/22</span>
-      </div>
-
-      <div class="task-row" onclick="toggleTask(this)">
-        <div class="task-checkbox"></div>
-        <div class="task-info">
-          <div class="task-name">Add Assistants to March Team Teaches</div>
-        </div>
-        <span class="due-badge soon">3/22</span>
-      </div>
-
-
-
-
-
       <div class="task-row" onclick="toggleTask(this)">
         <div class="task-checkbox"></div>
         <div class="task-info">
@@ -620,15 +431,136 @@
         </div>
         <span class="due-badge">Ongoing</span>
       </div>
-
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Netgym sub support — Coaches</div>
+          <div class="task-detail">Monitor and assist with coach sub requests via Netgym</div>
+        </div>
+        <span class="due-badge">Ongoing</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Netgym sub support — Core Crew</div>
+          <div class="task-detail">Monitor and assist with Core Crew sub requests via Netgym. Support finding subs for Core Crew shifts.</div>
+        </div>
+        <span class="due-badge">Ongoing</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Client experience items — shift wrap-ups</div>
+          <div class="task-detail">Review shift wrap-up notes and address client experience flags.</div>
+          <a href="https://licsolidocore.github.io/solidcore-bkct-shifts/" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📋 Shift Wrap-Up Report</a>
+        </div>
+        <span class="due-badge">Ongoing</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Management inbox (Management tab) — 9/9–9/16</div>
+          <div class="task-detail">Monitor and respond to anything labeled under the Management tab in the studio inbox</div>
+        </div>
+        <span class="due-badge">9/9–9/16</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Management inbox (Management tab) — 9/17–9/23</div>
+          <div class="task-detail">Monitor and respond to anything labeled under the Management tab in the studio inbox</div>
+        </div>
+        <span class="due-badge">9/17–9/23</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Approve Time Off Requests</div>
+          <div class="task-detail">Please log any approved requests for track keeping.</div>
+          <a href="https://docs.google.com/spreadsheets/d/1EmoQzTl7d4XGhhVPsEm65g20PSHTz--0T7-nTcJEU7c/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">🗓️ Time Off Log</a>
+        </div>
+        <span class="due-badge urgent">Due 9/14</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Timesheets (9/1–9/15)</div>
+          <div class="task-detail">Due by 11AM EDT on 9/16 — please make sure to clear any individual clock ins as well</div>
+        </div>
+        <span class="due-badge urgent">Due 9/16</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Reconcile Unpaids (9/1–9/15)</div>
+          <div class="task-detail">I will delegate to Core Crew but need support keeping an eye on it closer to payroll date.</div>
+        </div>
+        <span class="due-badge urgent">Due 9/16</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Negative Account Balances</div>
+          <div class="task-detail">Keep an eye on NAB — I will delegate to Core Crew but will need support on this closer to deadlines<br><a href="https://docs.google.com/spreadsheets/d/17JaWGpZqJGzV3QVN0RXd9M5avRAMUPWMQyAgKhdVvcM/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📊 NAB Spreadsheet</a></div>
+        </div>
+        <span class="due-badge urgent">Due 9/16</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Timesheets (9/16–9/20)</div>
+          <div class="task-detail">Due by 11AM EDT on 9/21</div>
+        </div>
+        <span class="due-badge soon">Due 9/21</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Reconcile Unpaids (9/16–9/22)</div>
+          <div class="task-detail">I will delegate to Core Crew but need support keeping an eye on it closer to payroll date.</div>
+        </div>
+        <span class="due-badge soon">Due 9/22</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Send Theme Class Request Form</div>
+          <div class="task-detail">I will send the form and schedule a reminder — attaching the form here for reference. Use pre-approved themes and gauge Hispanic & Latinx Heritage Month and Not for profit classes with L.O.V.E. – Latinas On the Verge of Excellence.</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGFojdaaggb8-yKJns6oNkreRrhUqlkrtULnFyXDh9K7-p2A/viewform?usp=dialog" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📝 Theme Request Form</a>
+          <a href="https://docs.google.com/spreadsheets/d/1o2wo_ytt4yY0ANk4rksODIftAkW9Im2mPZs5URyYWGY/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">📧 Coach Contact Info</a>
+        </div>
+        <span class="due-badge soon">Due 9/15</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Add Theme Classes on Blueprint</div>
+          <div class="task-detail">In addition to coach themes submitted, please add 3 Not for profit classes with L.O.V.E. – Latinas On the Verge of Excellence on 10/1 for Hispanic & Latinx Heritage Month.<br><a href="https://docs.google.com/spreadsheets/d/1IJVRAVa4VC91xHdGXMyHCrgR-1iXYN4yHc3FDELutDc/edit?usp=sharing" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:5px;margin-top:7px;padding:4px 11px;background:#1A1714;color:white;border-radius:12px;font-size:11px;font-weight:600;text-decoration:none;letter-spacing:0.03em;">🎨 Theme Class Submissions</a></div>
+        </div>
+        <span class="due-badge soon">9/22</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Add Assistants to October Team Teaches</div>
+        </div>
+        <span class="due-badge soon">9/22</span>
+      </div>
+      <div class="task-row" onclick="toggleTask(this)">
+        <div class="task-checkbox"></div>
+        <div class="task-info">
+          <div class="task-name">Cancel Classes on Blueprint for October Machine Maintenance</div>
+          <div class="task-detail">Inger — I've scheduled it for October 6th for 11:10am and 12:10pm classes, calendar invite sent, and I will let the Operations team know.</div>
+        </div>
+        <span class="due-badge soon">9/22</span>
+      </div>
     </div>
     <div class="form-footer">
       <label>Any notes or constraints?</label>
-      <textarea class="notes-textarea" id="notesInput" placeholder="e.g. I can cover the 3/10 items but will be traveling 3/15–3/17..."></textarea>
+      <textarea class="notes-textarea" id="notesInput" placeholder="e.g. I can cover the 9/10 items but will be traveling 9/15–9/17..."></textarea>
       <button class="submit-btn" onclick="submitCoverage()">✅ Submit My Coverage</button>
     </div>
   </div>
-
   <!-- SUMMARY -->
   <div style="margin-bottom: 36px;">
     <div class="section-label">Submitted Responses</div>
@@ -636,21 +568,46 @@
       <div class="no-responses">No submissions yet — responses will appear here once the team submits.</div>
     </div>
   </div>
-
-
 </div>
-
 <div class="thanks-note">
   <div class="thanks-icon">🤍</div>
   <div class="thanks-text">
-    <strong>Thank you so much for holding it down.</strong> Your support means everything to this team. See you soon!
+    <strong>Thank you so much for the support!</strong>
   </div>
 </div>
-
 <script>
   let currentPerson = null;
   const submissions = {};
   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwjoLeVPxCxQypp0bbgc-cwreV4O467CHrYRhg32x5O7ErStKsJlBBWDz8zFnz409cGfw/exec';
+
+  // Re-draws which tasks are locked/claimed based on current submissions.
+  // The person currently selected (currentPerson) is exempt, so they can
+  // still click their own previously-claimed tasks to unassign themselves.
+  function renderClaims() {
+    document.querySelectorAll('.task-row').forEach(row => {
+      row.classList.remove('claimed');
+      const tag = row.querySelector('.claimed-by');
+      if (tag) tag.remove();
+    });
+    Object.keys(submissions).forEach(name => {
+      if (name === currentPerson) return;
+      submissions[name].tasks.forEach(taskName => {
+        document.querySelectorAll('.task-row').forEach(row => {
+          const nameEl = row.querySelector('.task-name');
+          if (nameEl && nameEl.textContent.trim() === taskName) {
+            row.classList.add('claimed');
+            const info = row.querySelector('.task-info');
+            if (info && !info.querySelector('.claimed-by')) {
+              const tag = document.createElement('div');
+              tag.className = 'claimed-by';
+              tag.textContent = '✓ Covered by ' + name;
+              info.appendChild(tag);
+            }
+          }
+        });
+      });
+    });
+  }
 
   // Load existing submissions on page load
   function loadSubmissions() {
@@ -664,30 +621,13 @@
               btn.classList.add('submitted');
             }
           });
-          // Gray out tasks already claimed by this person
-          s.tasks.forEach(taskName => {
-            document.querySelectorAll('.task-row').forEach(row => {
-              const name = row.querySelector('.task-name');
-              if (name && name.textContent.trim() === taskName) {
-                row.classList.add('claimed');
-                const info = row.querySelector('.task-info');
-                if (info && !info.querySelector('.claimed-by')) {
-                  const tag = document.createElement('div');
-                  tag.className = 'claimed-by';
-                  tag.textContent = '✓ Covered by ' + s.name;
-                  info.appendChild(tag);
-                }
-              }
-            });
-          });
         });
+        renderClaims();
         if (data.length) renderSummary();
       })
       .catch(() => {});
   }
-
   loadSubmissions();
-
   function selectPerson(btn, name) {
     currentPerson = name;
     document.querySelectorAll('.person-btn').forEach(b => b.classList.remove('active'));
@@ -700,6 +640,9 @@
     document.getElementById('taskForm').classList.add('visible');
     document.querySelectorAll('.task-row').forEach(r => r.classList.remove('selected'));
     document.getElementById('notesInput').value = '';
+
+    renderClaims(); // unlocks this person's own previously-claimed tasks so they can edit them
+
     if (submissions[name]) {
       const prev = submissions[name];
       document.querySelectorAll('.task-row').forEach(row => {
@@ -712,11 +655,10 @@
       document.getElementById('taskForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 50);
   }
-
   function toggleTask(row) {
+    if (row.classList.contains('claimed')) return;
     row.classList.toggle('selected');
   }
-
   function submitCoverage() {
     if (!currentPerson) return;
     const tasks = [];
@@ -725,11 +667,9 @@
     });
     const notes = document.getElementById('notesInput').value.trim();
     submissions[currentPerson] = { tasks, notes };
-
     const submitBtn = document.querySelector('.submit-btn');
     submitBtn.textContent = 'Sending…';
     submitBtn.disabled = true;
-
     fetch(SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors',
@@ -741,49 +681,29 @@
         <div style="text-align:center;padding:24px 16px;">
           <div style="font-size:36px;margin-bottom:12px;">🤍</div>
           <div style="font-family:'DM Serif Display',serif;font-size:22px;color:var(--ink);margin-bottom:8px;">Thank you for your support!</div>
-          <div style="font-size:14px;color:var(--ink-soft);line-height:1.6;">Your coverage selections have been received.<br>It means so much to the team. See you soon!</div>
+          <div style="font-size:14px;color:var(--ink-soft);line-height:1.6;">Your coverage selections have been received.<br>You can come back and select your name again anytime to make changes.</div>
         </div>
       `;
     }).catch(() => {
       submitBtn.textContent = '⚠️ Something went wrong — please try again';
       submitBtn.disabled = false;
     });
-
     document.querySelectorAll('.person-btn').forEach(btn => {
       if (btn.textContent.replace('✓','').trim() === currentPerson) {
         btn.classList.remove('active');
         btn.classList.add('submitted');
       }
     });
-
     renderSummary();
-    // Gray out claimed tasks immediately
-    tasks.forEach(taskName => {
-      document.querySelectorAll('.task-row').forEach(row => {
-        const name = row.querySelector('.task-name');
-        if (name && name.textContent.trim() === taskName) {
-          row.classList.remove('selected');
-          row.classList.add('claimed');
-          const info = row.querySelector('.task-info');
-          if (info && !info.querySelector('.claimed-by')) {
-            const tag = document.createElement('div');
-            tag.className = 'claimed-by';
-            tag.textContent = '✓ Covered by ' + currentPerson;
-            info.appendChild(tag);
-          }
-        }
-      });
-    });
     document.querySelectorAll('.task-row:not(.claimed)').forEach(r => r.classList.remove('selected'));
     document.getElementById('notesInput').value = '';
     document.getElementById('taskForm').classList.remove('visible');
     currentPerson = null;
-
+    renderClaims(); // re-lock everything now that no one is actively editing
     setTimeout(() => {
       document.getElementById('summaryContainer').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 100);
   }
-
   function renderSummary() {
     const container = document.getElementById('summaryContainer');
     const names = Object.keys(submissions);
@@ -811,6 +731,5 @@
     container.innerHTML = html;
   }
 </script>
-
 </body>
 </html>
